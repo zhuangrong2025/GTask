@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <text>我的</text>
+      <!-- <image bindtap="bindViewTap" class="userinfo-avatar"}</text> -->
+      <text class="userinfo-nickname">{{userInfo.gender }}</text>
+      <text class="userinfo-nickname">{{userInfo.city }}</text>
+      <text class="userinfo-nickname">{{userInfo.country }}</text>
+    </block>
+  </view>
+</view>

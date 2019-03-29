@@ -1,0 +1,9 @@
+.list-item {
+  display: block;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  padding:10px;
+}
+.list-item text{
+  text-align: left;
+}

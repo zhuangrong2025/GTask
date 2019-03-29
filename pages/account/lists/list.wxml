@@ -1,0 +1,12 @@
+<!--list.wxml-->
+<view class="container list">
+
+  <block  wx:for="{{accounts}}" wx:for-item="account">
+   <view class="list-item">
+    <text>{{account.accountId}}</text>--
+    <text>{{account.accountName}}</text>--
+    <text>{{account.balance}}</text>
+    </view>
+  </block>
+  
+</view>
