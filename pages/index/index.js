@@ -4,19 +4,22 @@ const app = getApp()
 const header = app.globalData.header;
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    accounts: [{}]
   },
-  //事件处理函数
+  // log
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-
+  // add baby
+  bindAddBody: function () {
+    wx.navigateTo({
+      url: '../baby/baby'
+    })
+  },
   onLoad: function () {
     
     if (app.globalData.userInfo) {
@@ -73,11 +76,6 @@ Page({
           console.log('获取用户登录态失败：' + res.errMsg);
         }
       }
-    })
-
-    // 跳转的我的页面
-    wx.navigateTo({
-      url: '../mine/mine'
     })
   }
 })

@@ -1,4 +1,13 @@
 /**app.wxss**/
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
 .container {
   height: 100%;
   display: flex;
@@ -8,3 +17,10 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+view{
+  padding:0 !im;
+  margin:0;
+}
+input{
+  box-sizing: border-box;
+}

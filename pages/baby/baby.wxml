@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="babyinfo">
+    <view>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{gender}}" wx:key="gender">
+          <radio class="radio" value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view>
+      <input type="text" placeholder="nickname" bindinput="bindGetNickname" class='ipt'/>
+    </view>
+    <view>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" >
+        <view class="picker" class='ipt'>
+         {{date}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <button  class="btn-default" bindtap="bindSavebaby">保存</button>
+    </view>
+  </view>
+</view>

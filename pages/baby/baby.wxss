@@ -1,0 +1,83 @@
+/**index.wxss**/
+page{
+  background: #e7dfdf;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.circle-wrap{
+  width:100rpx;
+  height:100rpx;
+  background-color: #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.circle{
+  width:60rpx;
+  height:60rpx;
+}
+.blank{
+  height: 20rpx;
+}
+
+.circle{
+  width:125rpx;
+  height:125rpx;
+  border-radius: 50%;
+  padding:25rpx;
+  background-color: #fff;
+}
+
+/** baby **/
+.radio-group {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+.radio {
+    margin-top: 20rpx;
+}
+.ipt{
+  background-color:#fff;
+  height:64rpx;
+  line-height: 64rpx;
+  border-radius: 32rpx;
+  padding:0 20rpx;
+  text-align: center;
+}
+.babyinfo{
+  padding:0 30rpx;
+}
+.babyinfo view{
+  margin-top:20rpx;
+}
+.btn-default{
+  background-color:#09BB07;
+  color:#fff;
+  height:64rpx;
+  line-height: 64rpx;
+  border-radius: 32rpx;
+  padding:0 20rpx;
+}
