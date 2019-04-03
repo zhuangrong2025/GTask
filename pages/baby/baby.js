@@ -35,7 +35,7 @@ Page({
     wx.request({
       url: 'http://localhost:8081/baby/add',
       method: "post",
-      data: { code: code, nickname: this.data.userInfo.nickName },
+      data: { code: code, nickname: this.data.userInfo.nickName},
       success(res) {
         console.log("获取到openid：" + res.data.openid)
         wx.setStorageSync("sessionId", res.data.openid)
